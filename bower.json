@@ -1,0 +1,20 @@
+{
+  "name": "directives",
+  "version": "0.0.0",
+  "directory": "vendor",
+  "authors": [
+    "Brian Genisio <BrianGenisio@Gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.0",
+    "bootstrap": "~3.0.2"
+  }
+}
