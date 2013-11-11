@@ -1,1 +1,1 @@
-alert('first');
+window.foo = function(bar) { return "say " + bar; };

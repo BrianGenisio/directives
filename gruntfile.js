@@ -7,6 +7,10 @@ module.exports = function(grunt) {
         dist: {
             src: ['js/**/*.js'],
             dest: 'dist/app.js'
+        },
+        tests: {
+            src: ['tests/**/*.js'],
+            dest: 'dist/tests.js'
         }
     },
     jshint: {
@@ -14,10 +18,10 @@ module.exports = function(grunt) {
     },
     watch: {
         scripts: {
-            files: '**/*.js',
+            files: ['js/**/*.js', 'tests/**/*.js'],
             tasks: ['jshint', 'concat'],
             options: {
-                livereload: false
+                livereload: true
             }
         },
         html: {
