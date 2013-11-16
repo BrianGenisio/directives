@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     concat: {
         options: { separator: ';\n\n' },
         dist: {
-            src: ['js/module.js', 'js/**/*.js'],
+            src: ['js/module.js', 'js/**/*.js', 'dist/templates.js'],
             dest: 'dist/app.js'
         },
         tests: {
@@ -16,10 +16,17 @@ module.exports = function(grunt) {
     jshint: {
         all: ['js/*.js']
     },
+    ngtemplates: {
+        templates: {
+            cwd: 'js',
+            src: '**/*.html',
+            dest: 'dist/templates.js'
+        }
+    },
     watch: {
         scripts: {
             files: ['js/**/*.js', 'tests/**/*.js'],
-            tasks: ['jshint', 'concat'],
+            tasks: ['default'],
             options: {
                 livereload: true
             }
@@ -38,7 +45,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-livereload');
+  grunt.loadNpmTasks('grunt-angular-templates');
     
-  grunt.registerTask('default', ['jshint', 'concat']);
+  grunt.registerTask('default', ['jshint', 'ngtemplates', 'concat']);
 
 };

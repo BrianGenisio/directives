@@ -6,7 +6,7 @@ App.config(function($routeProvider) {
 
 	slides.forEach(function(slide, i) {
 		$routeProvider.when('/slides/' + i, {
-			templateUrl: '/js/slides/' + slide
+			templateUrl: 'slides/' + slide
 		});
 	});
 
