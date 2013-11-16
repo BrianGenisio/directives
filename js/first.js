@@ -1,1 +1,0 @@
-window.foo = function(bar) { return "say " + bar; };
