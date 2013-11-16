@@ -6,10 +6,9 @@ App.config(function($routeProvider) {
 
 	$routeProvider.when('/slides/:index', {
 		templateUrl: function(params) {
-			var index = params.index >= slides.length ? slides.length - 1 : params.index;
-			index = index < 0 ? 0 : index;
+			var slideName = slides[params.index];
 
-			return 'slides/' + slides[index];
+			return slideName ? 'slides/' + slides[params.index] : 'slides/notfound.html';
 		}
 	});
 
