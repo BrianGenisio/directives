@@ -25,7 +25,7 @@ module.exports = function(grunt) {
     },
     watch: {
         scripts: {
-            files: ['js/**/*.js', 'tests/**/*.js'],
+            files: ['js/**/*.js', 'js/**/*.html', 'tests/**/*.js'],
             tasks: ['default'],
             options: {
                 livereload: true
@@ -44,7 +44,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-livereload');
   grunt.loadNpmTasks('grunt-angular-templates');
     
   grunt.registerTask('default', ['jshint', 'ngtemplates', 'concat']);
