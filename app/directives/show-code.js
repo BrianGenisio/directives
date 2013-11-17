@@ -11,6 +11,8 @@ App.directive('showCode', function($http, $timeout) {
 
 				scope.editorOptions = {
 					lineNumbers: true,
+					matchBrackets: true,
+					autoCloseBrackets: true,
 					mode: mode,
 					theme: '3024-night'
 				}
