@@ -9,8 +9,14 @@ App.directive('showCode', function($http, $timeout) {
 			scope.save = function() {
 				$http.post("/save", {
 					file: scope.url,
-					content: scope.code
+					content: scope.tmpCode
+				}).success(function() {
+					scope.code = tmpCode;
 				});
+			};
+
+			scope.cancel = function() {
+				scope.tmpCode = scope.code;
 			};
 
 			scope.$watch('url', function() {
@@ -29,10 +35,12 @@ App.directive('showCode', function($http, $timeout) {
 				$http.get(scope.url)
 					.success(function(code) {
 						scope.code = code;
+						scope.tmpCode = code;
 					});
 			});
 		},
-		template: '<textarea ng-if="code" ui-codemirror="editorOptions" ng-model="$parent.code"></textarea>' +
-		          '<button ng-click="save()" class="btn btn-default">Save</button>'
+		template: '<textarea ng-if="code" ui-codemirror="editorOptions" ng-model="$parent.tmpCode"></textarea>' +
+		          '<button ng-click="save()" class="btn btn-default">Save</button>' + 
+		          '<button ng-click="cancel()" class="btn btn-default" ng-disabled="code == tmpCode">Cancel</button>'
 	};
 });
