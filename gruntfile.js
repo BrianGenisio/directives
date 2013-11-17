@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     concat: {
         options: { separator: ';\n\n' },
         dist: {
-            src: ['js/module.js', 'js/**/*.js', 'dist/templates.js'],
+            src: ['app/module.js', 'app/**/*.js', 'dist/templates.js'],
             dest: 'dist/app.js'
         },
         tests: {
@@ -14,18 +14,18 @@ module.exports = function(grunt) {
         }
     },
     jshint: {
-        all: ['js/*.js']
+        all: ['app/*.js']
     },
     ngtemplates: {
         templates: {
-            cwd: 'js',
+            cwd: 'app',
             src: '**/*.html',
             dest: 'dist/templates.js'
         }
     },
     watch: {
         scripts: {
-            files: ['js/**/*.js', 'js/**/*.html', 'tests/**/*.js'],
+            files: ['app/**/*.js', 'app/**/*.html', 'tests/**/*.js'],
             tasks: ['default'],
             options: {
                 livereload: true
