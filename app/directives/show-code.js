@@ -40,7 +40,9 @@ App.directive('showCode', function($http, $timeout) {
 			});
 		},
 		template: '<textarea ng-if="code" ui-codemirror="editorOptions" ng-model="$parent.tmpCode"></textarea>' +
-		          '<button ng-click="save()" class="btn btn-default">Save</button>' + 
-		          '<button ng-click="cancel()" class="btn btn-default" ng-disabled="code == tmpCode">Cancel</button>'
+		          '<div ng-show="code != tmpCode">' +
+		          '  <button ng-click="save()" class="btn btn-default">Save</button>' + 
+		          '  <button ng-click="cancel()" class="btn btn-default" ng-disabled="code == tmpCode">Cancel</button>' +
+		          '</div>'
 	};
 });

@@ -3,11 +3,19 @@ body
 	background-color: #555;
 }
 
+.slide-container
+{
+	padding: 30px;
+	height: 100%;
+}
+
 .slide
 {
+	height: 100%;
 	background-color: #eee;
-	margin: 30px;
 	padding: 10px;
+	border-radius: 6px;
+	overflow: auto;
 }
 
 .slide .slide-intro
