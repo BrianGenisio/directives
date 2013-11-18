@@ -15,7 +15,8 @@ app.get("/", function(request, response) {
 });
 
 app.get("/*", function(request, response) {
-	response.sendfile(__dirname + request.url);
+	var file = request.url.split('?')[0];
+	response.sendfile(__dirname + file);
 });
 
 app.post("/save", function(request, response) {

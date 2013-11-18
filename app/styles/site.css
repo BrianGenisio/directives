@@ -1,0 +1,16 @@
+body
+{
+	background-color: #555;
+}
+
+.slide
+{
+	background-color: #eee;
+	margin: 30px;
+	padding: 10px;
+}
+
+.slide .slide-intro
+{
+	text-align: center;
+}
