@@ -14,6 +14,7 @@
     
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
     <script type="text/javascript" src="bower_components/angular-ui-codemirror/ui-codemirror.js"></script>
     
     <script type="text/javascript" src="dist/app.js"></script>
@@ -22,7 +23,7 @@
 <body ng-app="SlidePlayer" ng-controller="app" watch-keys="keyMap">
     <div max-height>
         <div class="slide-container">
-            <div class="slide" ng-view></div>
+            <div class="slide view-animate" ng-view></div>
         </div>
     </div>
 </body>
