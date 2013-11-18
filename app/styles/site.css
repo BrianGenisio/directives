@@ -3,6 +3,11 @@ body
 	background-color: #555;
 }
 
+.CodeMirror
+{
+	font-size: 18px;
+}
+
 .slide-container
 {
 	padding: 3em;
@@ -21,4 +26,9 @@ body
 .slide .slide-intro
 {
 	text-align: center;
+}
+
+.slide .slide-simple-directive .usage .CodeMirror
+{
+	height: 3em;
 }
