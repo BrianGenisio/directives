@@ -3,6 +3,7 @@ App.config(function($routeProvider) {
 		"intro.html",
 		"overview.html",
 		"angular-intro.html",
+		"types-of-directives.html",
 		"next.html"
 	];
 
