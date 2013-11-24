@@ -1,6 +1,8 @@
 App.config(function($routeProvider) {
 	var slides = [
 		"intro.html",
+		"overview.html",
+		"angular-intro.html",
 		"next.html"
 	];
 
