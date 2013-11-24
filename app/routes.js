@@ -4,7 +4,7 @@ App.config(function($routeProvider) {
 		"overview.html",
 		"angular-intro.html",
 		"types-of-directives.html",
-		"next.html"
+		"hello-1.html"
 	];
 
 	$routeProvider.when('/slides/:index', {
