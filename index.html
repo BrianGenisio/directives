@@ -21,11 +21,14 @@
     <script type="text/javascript" src="dist/app.js"></script>
     <link rel="stylesheet" type="text/css" href="/app/styles/site.css">
 </head>
-<body ng-app="SlidePlayer" ng-controller="app" watch-keys="keyMap">
+<body ng-app="SlidePlayer" ng-controller="app">
     <div max-height>
         <div class="slide-container">
             <div class="slide view-animate" ng-view></div>
         </div>
+
+        <div class="navigate left" ng-click="goPrevious()">&lt;</div>
+        <div class="navigate right" ng-click="goNext()">&gt;</div>
     </div>
 </body>
 </html>

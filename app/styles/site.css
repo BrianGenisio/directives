@@ -40,3 +40,36 @@ body
 {
 	height: 3em;
 }
+
+.navigate 
+{
+	position: absolute;
+	height: 100%;
+	top: 0px;
+	bottom: 0px;
+	width: 1.2em;
+	font-size: 38px;
+	font-weight: bold;
+	vertical-align: middle;
+	padding: 10px;
+	background-color: black;
+	color: white;
+	opacity: .1;
+	cursor: pointer;
+}
+
+.navigate:hover
+{
+	opacity: .4;
+}
+
+.navigate.left
+{
+	left: 0px;
+}
+
+.navigate.right
+{
+	right: 0px;
+	text-align: right;
+}
