@@ -24,6 +24,9 @@ module.exports = function(grunt) {
         }
     },
     watch: {
+        options: {
+            atBegin: true
+        },
         scripts: {
             files: ['app/**/*.js', 'app/**/*.html', 'tests/**/*.js'],
             tasks: ['default'],
@@ -45,6 +48,12 @@ module.exports = function(grunt) {
                 livereload: true
             }
         }
+    },
+    karma: {
+      unit: {
+        configFile: 'karma.conf.js',
+        background: true
+      }
     }
   });
 
@@ -52,7 +61,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-angular-templates');
+  grunt.loadNpmTasks('grunt-karma');
     
-  grunt.registerTask('default', ['jshint', 'ngtemplates', 'concat']);
-
+  grunt.registerTask('default', ['jshint', 'ngtemplates', 'concat', 'karma:unit:run']);
+  grunt.registerTask('watchk', ['karma:unit:start', 'watch']);
 };
