@@ -73,3 +73,8 @@ body
 	right: 0px;
 	text-align: right;
 }
+
+.slide-test-simple-directive iframe
+{
+	width: 100%;
+}

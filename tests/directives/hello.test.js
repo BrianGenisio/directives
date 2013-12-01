@@ -1,7 +1,6 @@
 describe("hello directive", function() {
 	var element, scope;
 
-
 	beforeEach(module('SlidePlayer'));
 	beforeEach(inject(function($rootScope, $compile) {
 		var html = "<div hello></div>";
