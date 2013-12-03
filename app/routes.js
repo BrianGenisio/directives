@@ -6,7 +6,8 @@ App.config(function($routeProvider) {
 		"types-of-directives.html",
 		"hello-1.html",
 		"test-hello-1.html",
-		"apply-basics.html"
+		"apply-basics.html",
+		"apply-when-to-use.html"
 	];
 
 	$routeProvider.when('/slides/:index', {

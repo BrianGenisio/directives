@@ -1,9 +1,8 @@
 describe("hello directive", function() {
-	var element, scope;
-
-	beforeEach(module('SlidePlayer'));
-	beforeEach(inject(function($rootScope, $compile) {
-		var html = "<div hello></div>";
+  	var element, scope;
+  
+  	function bootstrap($rootScope, $compile) {
+      var html = "<div hello></div>";
 		element = angular.element(html);
 		
 		scope = $rootScope.$new();
@@ -13,6 +12,16 @@ describe("hello directive", function() {
 		link(scope);
 
 		scope.$digest();
+    }
+  
+  
+  
+  
+	
+
+	beforeEach(module('SlidePlayer'));
+	beforeEach(inject(function($rootScope, $compile) {
+		bootstrap($rootScope, $compile);
 	}));
 	
 	it("says hello", function() {
