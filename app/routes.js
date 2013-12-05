@@ -5,6 +5,7 @@ App.config(function($routeProvider) {
 		"angular-intro.html",
 		"types-of-directives.html",
 		"hello-1.html",
+		"hello-2.html",
 		"test-hello-1.html",
 		"apply-basics.html",
 		"apply-when-to-use.html"
