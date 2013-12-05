@@ -1,6 +1,6 @@
 App.directive('salut', function() {
 	return {
-	  restrict: 'EA',
+	  restrict: 'EAC',
       template: 'hello directive!'
 	}
 });
