@@ -8,6 +8,7 @@ App.config(function($routeProvider) {
 		"hello-1.html",
 		"hello-2.html",
 		"element-directives-ie8.html",
+		"templates-can-contain-directives.html",
 		"test-hello-1.html",
 		"apply-basics.html",
 		"apply-when-to-use.html"
