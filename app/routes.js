@@ -10,6 +10,7 @@ App.config(function($routeProvider) {
 		"element-directives-ie8.html",
 		"templates-can-contain-directives.html",
 		"templates-can-be-separate.html",
+		"directives-can-have-behavior.html",
 		"test-hello-1.html",
 		"apply-basics.html",
 		"apply-when-to-use.html"
