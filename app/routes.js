@@ -12,6 +12,7 @@ App.config(function($routeProvider) {
 		"templates-can-be-separate.html",
 		"directives-can-have-behavior.html",
 		"directives-can-use-your-scope.html",
+		"sharing-directive-scope-might-not-be-good.html",
 		"test-hello-1.html",
 		"apply-basics.html",
 		"apply-when-to-use.html"
