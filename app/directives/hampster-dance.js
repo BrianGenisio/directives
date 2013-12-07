@@ -1,5 +1,5 @@
 App.directive('hampsterDance', function() {
-	return {
+  	return {
 	  restrict: 'EA',
 	  
 	  controller: function($scope) {
