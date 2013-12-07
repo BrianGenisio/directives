@@ -11,6 +11,7 @@ App.config(function($routeProvider) {
 		"templates-can-contain-directives.html",
 		"templates-can-be-separate.html",
 		"directives-can-have-behavior.html",
+		"directives-can-use-your-scope.html",
 		"test-hello-1.html",
 		"apply-basics.html",
 		"apply-when-to-use.html"
