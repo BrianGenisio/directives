@@ -84,3 +84,37 @@ body
 	height: 0px;
 	width: 0px;
 }
+
+.interesting-man
+{
+	position: relative;
+	width: 430px;
+	height: 539px;
+	color: white;
+	font-size: 42px;
+	text-shadow:
+    -3px -3px 0 #000,
+    0px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000,
+    0px 3px 0 #000;
+}
+
+.interesting-man img, .interesting-man div 
+{
+	position: absolute;
+}
+
+.interesting-man .header
+{
+	padding: 10px 20px;
+	text-align: center;
+}
+
+.interesting-man .footer
+{
+	padding: 10px 20px;
+	bottom: 0px;
+	text-align: center;
+}
