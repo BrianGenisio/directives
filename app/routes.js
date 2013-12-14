@@ -21,6 +21,7 @@ App.config(function($routeProvider) {
 		"isolate-scope-string-binding-mechanics.html",
 		"isolate-scope-object-binding.html",
 		"isolate-scope-object-binding2.html",
+		"isolate-scope-object-binding-mechanics.html",
 		"test-hello-1.html",
 		"apply-basics.html",
 		"apply-when-to-use.html"
