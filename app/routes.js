@@ -14,7 +14,7 @@ App.config(function($routeProvider) {
 		"directives-can-use-your-scope.html",
 		"sharing-directive-scope-might-not-be-good.html",
 		"isolate-scope-intro.html",
-		"isolate-scope-object-bind.html",
+		"isolate-scope-intro2.html",
 		"isolate-scope-bindings.html",
 		"isolate-scope-string-binding.html",
 		"isolate-scope-string-binding-interpolate.html",
