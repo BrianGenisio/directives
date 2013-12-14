@@ -5,6 +5,7 @@ App.directive('interesting', function() {
 	  	'header': '@',
 	  	'footer': '@'
 	  },
-	  templateUrl: '/app/directives/interesting.html'
+	  templateUrl:
+        '/app/directives/interesting.html'
 	}
 });

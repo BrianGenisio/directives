@@ -17,6 +17,7 @@ App.config(function($routeProvider) {
 		"isolate-scope-object-bind.html",
 		"isolate-scope-bindings.html",
 		"isolate-scope-string-binding.html",
+		"isolate-scope-string-binding-interpolate.html",
 		"test-hello-1.html",
 		"apply-basics.html",
 		"apply-when-to-use.html"

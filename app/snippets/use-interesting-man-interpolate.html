@@ -1,0 +1,14 @@
+<div ng-init="data = {
+                what: 'go to conferences', 
+                how: 'go to Codemash!'
+              }">
+
+  <interesting 
+    header="I don't always {{data.what}}" 
+    footer="But when I do, I {{data.how}}">
+  </interesting>
+
+  <input ng-model="data.what" />
+  <input ng-model="data.how" />
+
+</div>
