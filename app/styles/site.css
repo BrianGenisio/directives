@@ -118,3 +118,7 @@ body
 	bottom: 0px;
 	text-align: center;
 }
+
+.edit.in-place {
+	cursor: pointer;
+}
