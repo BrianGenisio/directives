@@ -122,3 +122,15 @@ body
 .edit.in-place {
 	cursor: pointer;
 }
+
+.jedi {
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+}
+
+.sith {
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
