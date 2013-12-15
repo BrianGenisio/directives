@@ -6,10 +6,9 @@ describe("hello directive", function() {
 		element = angular.element(html);
 		
 		scope = $rootScope.$new();
-        scope.foo = 'bar';
 		
-		var link = $compile(element);
-		link(scope);
+		var compositeLink = $compile(element);
+		compositeLink(scope);
 
 		scope.$digest();
     }
