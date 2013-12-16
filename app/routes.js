@@ -28,7 +28,13 @@ App.config(function($routeProvider) {
 		"isolate-scope-extras.html",
 		"test-hello-1.html",
 		"apply-basics.html",
-		"apply-when-to-use.html"
+		"apply-when-to-use.html",
+		"compile-vs-link.html",
+		"recursive.html",
+		"transclusion.html",
+		"dependent-directives.html",
+		"angular-directives-revisited.html",
+		"thank-you.html"
 	];
 
 	$routeProvider.when('/slides/:index', {
