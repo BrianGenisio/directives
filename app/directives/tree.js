@@ -1,24 +1,11 @@
-App.directive('tree', function($timeout, $compile) {
+App.directive('tree', function(recursionHelper) {
   return {
     restrict: 'AE',
     scope: {
       nodes: '='
     },
-    link: function(scope, element) {
-
-    	$timeout(function() {
-    		var containers = element.find('.subtree-container');
-
-    		angular.forEach(containers, function(container) {
-    			var containerElement = angular.element(container);
-
-    			containerElement.append('<tree nodes="value"></tree>');
-    			
-    			$compile(containerElement)(containerElement.scope());
-    		});
-    		
-    	});
-
+    compile: function(tElement) {
+      return recursionHelper.compile(tElement);
     },
     templateUrl: '/app/directives/tree.html'
   };

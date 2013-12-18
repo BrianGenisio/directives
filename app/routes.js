@@ -32,6 +32,7 @@ App.config(function($routeProvider) {
 		"compile-vs-link.html",
 		"bad-tree.html",
 		"recursive.html",
+		"general-recursion.html",
 		"transclusion.html",
 		"dependent-directives.html",
 		"angular-directives-revisited.html",	
