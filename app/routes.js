@@ -30,10 +30,11 @@ App.config(function($routeProvider) {
 		"apply-basics.html",
 		"apply-when-to-use.html",
 		"compile-vs-link.html",
+		"bad-tree.html",
 		"recursive.html",
 		"transclusion.html",
 		"dependent-directives.html",
-		"angular-directives-revisited.html",
+		"angular-directives-revisited.html",	
 		"thank-you.html"
 	];
 
