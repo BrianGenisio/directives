@@ -1,6 +1,6 @@
 <ul>
   <li ng-repeat="(key, value) in nodes">
-    <a ng-click="show = !show">{{key}}</a>
-    <div class="subtree-container"></div>
+    <a ng-click="hide = !hide">{{key}}</a>
+    <div class="subtree-container" ng-hide="hide"></div>
   </li>
-</ul>
+</ul>`
