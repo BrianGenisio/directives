@@ -34,6 +34,7 @@ App.config(function($routeProvider) {
 		"recursive.html",
 		"general-recursion.html",
 		"transclusion.html",
+		"harlem-shake.html",
 		"dependent-directives.html",
 		"angular-directives-revisited.html",	
 		"thank-you.html"
