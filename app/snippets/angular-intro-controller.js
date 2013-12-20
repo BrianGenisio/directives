@@ -5,7 +5,7 @@ App.controller('StarwarsCtrl', function($scope) {
 		{name: "Obi Wan Kanobi", homeworld: "Stewjon" },
 		{name: "Han Solo", homeworld: "Corillia"},
 		{name: "Chewbacca", homeworld: "Kashyyyk"},
-		{name: "Leia Skywalker", homeworld: "Alderaan"},
+		{name: "Leia Organa", homeworld: "Alderaan"},
 		{name: "Darth Vader", homeworld: "Tatooine"}
 	];
 

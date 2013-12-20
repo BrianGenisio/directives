@@ -14,11 +14,13 @@ App.directive('bindBool', function($parse) {
       scope.$parent.$watch(attrs.value, 
         function(val) {scope.value = val;});
       
-      scope.toggle = function() {
-        scope.value = !scope.value;
-        
+      scope.$watch('value', function() {
         $parse(attrs.value)
           .assign(scope.$parent, scope.value);
+      });
+      
+      scope.toggle = function() {
+        scope.value = !scope.value;
       };
     }
   };

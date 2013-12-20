@@ -9,7 +9,7 @@ App.directive('bindFunc', function($parse) {
       scope.hello = "Greetings!";
 
       scope.action = function(parameters) {
-        scope.$parent.$eval(attrs.action, parameters);
+        return scope.$parent.$eval(attrs.action, parameters);
       };
 
     },

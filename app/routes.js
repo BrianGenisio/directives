@@ -1,7 +1,6 @@
 App.config(function($routeProvider) {
 	var slides = [
 		"intro.html",
-		"overview.html",
 		"what-is-a-directive.html",
 		"angular-intro.html",
 		"types-of-directives.html",

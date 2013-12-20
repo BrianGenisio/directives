@@ -13,7 +13,7 @@ App.factory('rickAstley', function() {
       return {
         count: 0,
         next: function() {
-          return messages[this.count++];
+          return messages[this.count++ % messages.length];
         }  
       }
     }
