@@ -37,6 +37,7 @@ App.config(function($routeProvider) {
 		"dependent-directives.html",
 		"tabs-without-directives.html",
 		"tabs.html",
+		"show-show-code.html",
 		"angular-directives-revisited.html",	
 		"thank-you.html"
 	];
