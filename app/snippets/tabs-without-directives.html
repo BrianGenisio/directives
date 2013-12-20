@@ -1,20 +1,27 @@
-<div class="tab-list">
+<div class="tab-list" ng-init="selected = 'Double Rainbow'">
   <ul class="nav nav-tabs">
-    <li class="active">
-      <a href="">First</a>
+    <li ng-class="{active: selected == 'Double Rainbow'}">
+      <a href="" ng-click="selected = 'Double Rainbow'">Double Rainbow</a>
     </li>
-    <li>
-      <a href="">Second</a>
+    <li ng-class="{active: selected == 'Star Wars Kid'}">
+      <a href="" ng-click="selected = 'Star Wars Kid'">Star Wars Kid</a>
+    </li>
+    <li ng-class="{active: selected == 'Chocolate Rain'}">
+      <a href="" ng-click="selected = 'Chocolate Rain'">Chocolate Rain</a>
     </li>
   </ul>
 
   <div class="tab-content">
-    <div class="tab-pane active">
-      This is the content for the first tab
+    <div class="tab-pane" ng-class="{active: selected == 'Double Rainbow'}">
+      <img src="/img/double-rainbow.jpg" />
     </div>
 
-    <div class="tab-pane">
-      This is the content for the second tab
+    <div class="tab-pane" ng-class="{active: selected == 'Star Wars Kid'}">
+      <img src="/img/starwars-kid.jpg" />
+    </div>
+
+    <div class="tab-pane" ng-class="{active: selected == 'Chocolate Rain'}">
+      <img src="/img/chocolate-rain.gif" />
     </div>
   </div>
 </div>
