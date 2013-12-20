@@ -36,6 +36,8 @@ App.config(function($routeProvider) {
 		"transclusion.html",
 		"harlem-shake.html",
 		"dependent-directives.html",
+		"tabs-without-directives.html",
+		"tabs.html",
 		"angular-directives-revisited.html",	
 		"thank-you.html"
 	];
