@@ -1,0 +1,40 @@
+* appropriate level
+* ordering switched? Perhaps show an overview of the lifecyle in the beginning?
+* Template Cache might be cut? less detail?
+* More directives that do real-world things (edit in place, use in two places)
+* More real-world jQuery/apply
+* Write a directive that uses string binding and then show how it works
+* Not demistifying THIS directive... demistifying ALL directives
+* Recursion might need to be pruned a bit
+* Hampster dance for isolation was good but got bogged down later
+* less often of what Angular is doing for you.
+* talk about watch and observe in the apply/digest section
+* music will get annoying.  Consider something different.
+* Talk about "upper right" or "lower left", not just mouse highlighting
+* Mechanics of String Binding instead?
+* sometimes the the sentances trailed off at the end.
+* Zoom into the UI while demoing
+* Be more clear about inside/outside scopes
+* Make sure to explain that ng-init is for illustrative properties
+* Stress more often that THIS IS WHAT ANGULAR IS DOING FOR YOU
+* Perhaps show $watch and $observe in practice and then explain that this is what Angular does
+* Don't need code templates.  Use convention instead.  Perhaps JS on left, HTML on right?
+* Perhaps no titles?
+* Consider resizing left and right columns
+* ZoomIt alternative? For showing dev tools
+* Alias and options interesting but not in docs.  Know this. Perhaps have a backup documentation
+* Remember to repeat the question before you answer it
+* Perhaps put testing earlier.  At least give clues that I'll talk about bootstrapping later
+* When you take away $apply, be more illustrative that the value IS still changing
+* Recursion is fun/interesting was not within the theme of talk.  
+* Think more about demystification.  What are the common problems? How do I tackle them?
+* ng-transclude scope is something I should talk about.  directive and transcluded are siblings
+* Less hampsters (in the beginning and shake) 
+* Don't need to talk about how angular directives work.  Only talk about them in the beginning?
+* Cut back initial kinds of directives.  Consider using first directive more complicated
+* Discussion of web components and path to future
+
+- Construction (usage, templates, transclusion, how does it get constructed? unit test)
+- Data (binding)
+- Behavior (compile, link, parent/child)
+
