@@ -1,7 +1,6 @@
 <ul>
   <li ng-repeat="(key, value) in nodes">
     <a ng-click="hide = !hide">{{key}}</a>
-    <bad-tree nodes="value" ng-hide="hide">
-    </bad-tree>
+    <bad-tree nodes="value" ng-hide="hide"></bad-tree>
   </li>
 </ul>

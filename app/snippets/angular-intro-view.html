@@ -1,10 +1,10 @@
 <div ng-controller="StarwarsCtrl">
-	<h2>Star Wars Charcters</h2>
-	<ul>
-      <li ng-repeat="character in characters | filter:name">
-			{{character.name}} from {{character.homeworld}}
-		</li>
-	</ul>
+  <h2>Star Wars Charcters</h2>
+  <ul>
+    <li ng-repeat="character in characters | filter:name">
+      {{character.name}} from {{character.homeworld}}
+    </li>
+  </ul>
         
-    <input ng-model="name" />
+  <input ng-model="name" />
 </div>

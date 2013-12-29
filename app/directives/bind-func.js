@@ -1,6 +1,7 @@
 App.directive('bindFunc', function($parse) {
   return {
     restrict: 'AE',
+    
     scope: {
 //      action: '&'
     },  

@@ -1,5 +1,5 @@
 App.directive('hello', function() {
-	return {
-      template: 'hello directive!'
-	}
+  return {
+    template: 'hello directive!'
+  };
 });

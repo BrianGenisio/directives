@@ -1,10 +1,9 @@
 <div class="edit in-place">
-	<span ng-click="edit()" ng-show="!editing">{{ngModel}}</span>
+  <span ng-click="edit()" ng-show="!editing">{{ngModel}}</span>
 
-	<span ng-show="editing">
-		<input type="text" class="form-control" 
-               ng-model="tmpModel" ng-show="editing">
-		<button class="btn" ng-click="save()">Save</button>
-		<button class="btn" ng-click="cancel()">Cancel</button>
-	</span>
+  <span ng-show="editing">
+    <input type="text" class="form-control" ng-model="tmpModel" ng-show="editing">
+    <button class="btn" ng-click="save()">Save</button>
+    <button class="btn" ng-click="cancel()">Cancel</button>
+  </span>
 </div>

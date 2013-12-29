@@ -1,9 +1,11 @@
 App.directive('callback', function(rickAstley) {
   return {
     restrict: 'AE',
+    
     scope: {
       callback: '&'
     },
+    
     controller: function($scope) {
       var messages = rickAstley.get();
 
@@ -14,9 +16,8 @@ App.directive('callback', function(rickAstley) {
       };
 
     },
-    template: 
-      '<button ng-click="freeiPad()">' +
-      '  Free iPad!' +
-      '</button>'
-  }
+    template: '<button ng-click="freeiPad()">' +
+              '  Free iPad!' +
+              '</button>'
+  };
 });

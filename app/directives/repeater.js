@@ -1,11 +1,12 @@
 App.directive('repeater', function() {
   return {
     restrict: 'AE',
+    
     scope: {
-    	items: '=',
-    	itemClass: '&'
+      items: '=',
+      itemClass: '&'
     },
-    templateUrl:
-      '/app/directives/repeater.html' 
+    
+    templateUrl: '/app/directives/repeater.html' 
   };
 });

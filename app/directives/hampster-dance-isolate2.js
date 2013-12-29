@@ -1,17 +1,17 @@
 App.directive('hampsterDanceIsolate2', function() {
-  	return {
-	  restrict: 'EA',
+  return {
+    restrict: 'EA',
 	  
-	  scope: {
-	  	animated: '='
-	  },
+    scope: {
+      animated: '='
+    },
 
-	  controller: function($scope) {
-	  	$scope.toggle = function() {
-	  		$scope.animated = !$scope.animated;
-	  	}
-	  },
+    controller: function($scope) {
+      $scope.toggle = function() {
+        $scope.animated = !$scope.animated;
+      }
+    },
 
-      templateUrl: '/app/directives/hampster-dance.html'
-	}
+    templateUrl: '/app/directives/hampster-dance.html'
+  };
 });

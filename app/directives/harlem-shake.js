@@ -1,12 +1,16 @@
-App.directive('harlemShake', function($timeout, hsConfig) {
+App.directive('harlemShake', function(hsConfig) {
   return {
     restrict: 'AE',
     transclude: true,
+    
     link: function(scope, element) {
-      $timeout(function() {
-        $(element).hshakeify(hsConfig);
-      }, 100);
+      element.click(function() {
+        scope.$apply(function() {
+          $(element).hshakeify(hsConfig);
+        });
+      });
     },
+    
     templateUrl: 
       '/app/directives/harlem-shake.html'
   };

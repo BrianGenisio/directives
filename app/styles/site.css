@@ -1,11 +1,16 @@
 body
 {
 	background-color: #000;
+	font-size: 20px;
+}
+
+.well {
+	overflow-x: hidden;
 }
 
 .CodeMirror
 {
-	font-size: 18px;
+	font-size: 22px;
 }
  
 .view-animate.ng-enter, .view-animate.ng-leave {

@@ -4,9 +4,11 @@ App.directive('tree', function(recursionHelper) {
     scope: {
       nodes: '='
     },
+    
     compile: function(tElement) {
       return recursionHelper.compile(tElement);
     },
+    
     templateUrl: '/app/directives/tree.html'
   };
 });
