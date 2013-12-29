@@ -138,3 +138,7 @@ body
 .slide-what-is-a-directive img {
 	width: 80%;
 }
+
+.column-view .column, .column-view .column {
+	transition: width 1s;
+}
