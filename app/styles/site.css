@@ -25,7 +25,7 @@ body
 .slide
 {
 	height: 100%;
-	background-color: #eee;
+	color: #122b31;
 	padding: 1em;
 	border-radius: 20px;
 	overflow: auto;
@@ -38,11 +38,6 @@ body
 	background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
 	background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
 	background-color: #f7fbfc;
-}
-
-.slide .slide-intro
-{
-	text-align: center;
 }
 
 .navigate 
@@ -190,4 +185,46 @@ body {
 .show-code .controls .cancel {
 	position: absolute;
 	right: 6px;
+}
+
+.slide .slide-intro
+{
+	text-align: center;
+}
+
+.slide .slide-intro h1 {
+	font-size: 62px;
+}
+
+.slide .slide-intro h2 {
+	font-size: 42px;
+}
+
+.slide .slide-intro p {
+	font-size: 32px;
+	position: absolute;
+	bottom: 5em;
+	width: 100%;
+}
+
+.slide .slide-what-is-a-directive {
+	background-image: url(/img/legos.jpg);
+	background-size: cover;
+	height: 100%;
+	padding: 0px;
+	margin: -35px -15px 0px -15px;
+	color: white;
+	text-align: center;
+}
+
+.slide .slide-what-is-a-directive h1 {
+	padding: 5em;
+	font-size: 62px;
+	text-shadow:
+    -1px -1px 0 #000,
+    0px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    0px 1px 0 #000;
 }
