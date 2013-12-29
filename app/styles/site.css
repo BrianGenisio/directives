@@ -1,6 +1,6 @@
 body
 {
-	background-color: #555;
+	background-color: #000;
 }
 
 .CodeMirror
@@ -18,7 +18,7 @@ body
 
 .slide-container
 {
-	padding: 1em;
+	padding: 0em;
 	height: 100%;
 }
 
@@ -30,6 +30,14 @@ body
 	border-radius: 6px;
 	overflow: auto;
 	overflow-x: hidden;
+}
+
+.slide {
+	background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+	background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+	background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+	background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+	background-color: #f7fbfc;
 }
 
 .slide .slide-intro
