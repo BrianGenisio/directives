@@ -24,7 +24,7 @@ App.directive('showCode', function($http, $timeout) {
 
 				scope.editorOptions = {
 					lineNumbers: true,
-					lineWrapping: true,
+					lineWrapping: false,
 					matchBrackets: true,
 					autoCloseBrackets: true,
 					mode: mode,

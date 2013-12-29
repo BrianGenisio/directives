@@ -12,11 +12,6 @@ describe("hello directive", function() {
 
 		scope.$digest();
     }
-  
-  
-  
-  
-	
 
 	beforeEach(module('SlidePlayer'));
 	beforeEach(inject(function($rootScope, $compile) {

@@ -36,11 +36,6 @@ body
 	text-align: center;
 }
 
-.slide .slide-simple-directive .usage .CodeMirror
-{
-	height: 3em;
-}
-
 .navigate 
 {
 	position: absolute;
@@ -141,4 +136,18 @@ body
 
 .column-view .column, .column-view .column {
 	transition: width 1s;
+}
+
+.CodeMirror {
+	height: auto;
+}
+
+.CodeMirror-scroll {
+  height: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.CodeMirror-hscrollbar {
+	overflow-x: hidden;
 }
