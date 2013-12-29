@@ -156,3 +156,29 @@ body
 body {
 	overflow-y: hidden;
 }
+
+.show-code {
+	padding-bottom: 1em;
+	position: relative;
+}
+
+.show-code .controls {
+	position: absolute;
+	bottom: 16px;
+	left: 3px;
+	z-index: 5000;
+	width: 100%;
+}
+
+.show-code .controls button {
+	opacity: 0.2;
+}
+
+.show-code .controls button:hover {
+	opacity: 1;
+}
+
+.show-code .controls .cancel {
+	position: absolute;
+	right: 6px;
+}

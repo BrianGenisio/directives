@@ -40,12 +40,14 @@ App.directive('showCode', function($http, $timeout) {
 					});
 			});
 		},
-		template: '<textarea ng-if="code" ui-codemirror="editorOptions" ng-model="$parent.tmpCode"></textarea>' +
-		          '<div ng-show="code != tmpCode">' +
-		          '  <button ng-click="save()" class="btn btn-default">Save</button>' + 
-		          '  <button ng-click="cancel()" class="btn btn-default" ng-disabled="code == tmpCode">'+
-		          '    Cancel' +
-		          '  </button>' +
+		template: '<div class="show-code">' +
+		          '  <textarea ng-if="code" ui-codemirror="editorOptions" ng-model="$parent.tmpCode"></textarea>' +
+		          '  <div ng-show="code != tmpCode" class="controls">' +
+		          '    <button ng-click="save()" class="btn btn-success ok"><i class="glyphicon glyphicon-ok"></i></button>' + 
+		          '    <button ng-click="cancel()" class="btn btn-danger cancel" ng-disabled="code == tmpCode">'+
+		          '      <i class="glyphicon glyphicon-ban-circle"></i>' +
+		          '    </button>' +
+		          '  </div>' +
 		          '</div>'
 	};
 });
