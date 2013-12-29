@@ -18,7 +18,7 @@ body
 
 .slide-container
 {
-	padding: 3em;
+	padding: 1em;
 	height: 100%;
 }
 
@@ -29,6 +29,7 @@ body
 	padding: 1em;
 	border-radius: 6px;
 	overflow: auto;
+	overflow-x: hidden;
 }
 
 .slide .slide-intro
@@ -49,7 +50,7 @@ body
 	padding: 10px;
 	background-color: black;
 	color: white;
-	opacity: .1;
+	opacity: 0;
 	cursor: pointer;
 }
 
@@ -150,4 +151,8 @@ body
 
 .CodeMirror-hscrollbar {
 	overflow-x: hidden;
+}
+
+body {
+	overflow-y: hidden;
 }
