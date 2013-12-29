@@ -1,21 +1,11 @@
-<div class="slide-bad-tree">
-	<h1>Why is it important to know the difference?</h1>
+<column-view heading="Why is it important to know the difference?" class="slide-bad-tree">
+	<column>
+		<div show-code="/app/directives/bad-tree.js" mode="javascript"></div>
+		<div show-code="/app/directives/bad-tree.html" mode="html"></div>
+	</column>
 
-	<div class="row">
-		<div class="col-md-6">
-			JavaScript:
-			<div show-code="/app/directives/bad-tree.js" mode="javascript"></div>
-
-			Template:
-			<div show-code="/app/directives/bad-tree.html" mode="html"></div>
-		</div>
-
-		<div class="col-md-6">
-			Controller:
-			<div class="usage" show-code="/app/snippets/tree-demo-controller.js" mode="javascript"></div>
-
-			HTML:
-			<div class="usage" show-code="/app/snippets/use-bad-tree.html" mode="html"></div>
-		</div>
-	</div>
-</div>
+	<column>
+		<div class="usage" show-code="/app/snippets/tree-demo-controller.js" mode="javascript"></div>
+		<div class="usage" show-code="/app/snippets/use-bad-tree.html" mode="html"></div>
+	</column>
+</column-view>

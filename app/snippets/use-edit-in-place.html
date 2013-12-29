@@ -1,8 +1,6 @@
-<div 
- ng-init="value = 'testing'">
+<div ng-init="person = {first: 'Brian', last: 'Genisio'}">
   
-  <edit-in-place 
-   ng-model="value">
-  </edit-in-place>
+  <edit-in-place ng-model="person.first"></edit-in-place>
+  <edit-in-place ng-model="person.last"></edit-in-place>
 
 </div>

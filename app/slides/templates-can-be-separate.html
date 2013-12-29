@@ -1,23 +1,13 @@
-<div class="slide-templates-can-be-separate">
-	<h1>Templates Can Be Separate (async)</h1>
+<column-view heading="Templates Can Be Separate (async)" class="slide-templates-can-be-separate">
+	<column>
+		<div show-code="/app/directives/hampster.js" mode="javascript"></div>
+		<div show-code="/app/directives/hampster.html" mode="javascript"></div>
+	</column>
 
-	<div class="row">
-		<div class="col-md-8">
-			JavaScript:
-			<div show-code="/app/directives/hampster.js" mode="javascript"></div>
-		
-			hampster.html Template:
-			<div show-code="/app/directives/hampster.html" mode="javascript"></div>
+	<column>
+		<div class="usage" show-code="/app/snippets/use-hampster.html" mode="html"></div>
+		<div class="demo well">
+			<div ng-include="'/app/snippets/use-hampster.html'"></div>
 		</div>
-
-		<div class="col-md-4">
-			HTML:
-			<div class="usage" show-code="/app/snippets/use-hampster.html" mode="html"></div>
-
-			Demo:
-			<div class="demo well">
-				<div ng-include="'/app/snippets/use-hampster.html'"></div>
-			</div>
-		</div>
-	</div>
-</div>
+	</column>
+</column-view>

@@ -1,23 +1,13 @@
-<div class="slide-isolate-scope-object-bind">
-	<h1>Isolate scopes can "pass" parameters</h1>
+<column-view heading="Isolate scopes can &quot;pass&quot; parameters" class="slide-isolate-scope-object-bind">
+	<column>
+		<div show-code="/app/directives/hampster-dance-isolate2.js" mode="javascript"></div>
+		<div show-code="/app/directives/hampster-dance.html" mode="javascript"></div>
+	</column>
 
-	<div class="row">
-		<div class="col-md-8">
-			JavaScript:
-			<div show-code="/app/directives/hampster-dance-isolate2.js" mode="javascript"></div>
-		
-			hampster.html Template:
-			<div show-code="/app/directives/hampster-dance.html" mode="javascript"></div>
+	<column>
+		<div class="usage" show-code="/app/snippets/use-hampster-dance-with-isolate-object-bind.html" mode="html"></div>
+		<div class="demo well">
+			<div ng-include="'/app/snippets/use-hampster-dance-with-isolate-object-bind.html'"></div>
 		</div>
-
-		<div class="col-md-4">
-			HTML:
-			<div class="usage" show-code="/app/snippets/use-hampster-dance-with-isolate-object-bind.html" mode="html"></div>
-
-			Demo:
-			<div class="demo well">
-				<div ng-include="'/app/snippets/use-hampster-dance-with-isolate-object-bind.html'"></div>
-			</div>
-		</div>
-	</div>
-</div>
+	</column>
+</column-view>

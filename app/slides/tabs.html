@@ -1,24 +1,19 @@
-<div class="slide-tabs">
-	<h1>Tabs Directives</h1>
+<column-view heading="Tabs Directives" class="slide-tabs">
+	<column>
+		<h2>Tabs</h2>
+		<div show-code="/app/directives/tabs.js" mode="javascript"></div>
+		<div show-code="/app/directives/tabs.html" mode="javascript"></div>
+	</column>
 
-	<div class="row">
-		<div class="col-md-12">
-			tab-list.js:
-			<div show-code="/app/directives/tabs.js" mode="javascript"></div>
-		
-			Template:
-			<div show-code="/app/directives/tabs.html" mode="javascript"></div>
-		
-			tab.js:
-			<div show-code="/app/directives/tab.js" mode="javascript"></div>
+	<column>
+		<h2>Tab</h2>
+		<div show-code="/app/directives/tab.js" mode="javascript"></div>
+		<div show-code="/app/directives/tab.html" mode="javascript"></div>
+	</column>
 
-			Template:
-			<div show-code="/app/directives/tab.html" mode="javascript"></div>
-
-			Demo:
-			<div class="demo well">
-				<div ng-include="'/app/snippets/use-tabs.html'"></div>
-			</div>
+	<column>
+		<div class="demo well">
+			<div ng-include="'/app/snippets/use-tabs.html'"></div>
 		</div>
-	</div>
-</div>
+	</column>
+</column-view>

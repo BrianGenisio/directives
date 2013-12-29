@@ -1,17 +1,11 @@
-<div class="slide-test-simple-directive">
-	<h1>Testing the Simple Directive</h1>
+<column-view heading="Testing the Simple Directive" class="slide-test-simple-directive">
+	<column>
+		<div show-code="/tests/directives/hello.test.js" mode="javascript"></div>
+		<div show-code="/app/directives/hello.js" mode="javascript"></div>
+	</column>
 
-	<div class="row">
-		<div class="col-md-7">
-			Test:
-			<div show-code="/tests/directives/hello.test.js" mode="javascript"></div>
-
-			Directive:
-			<div show-code="/app/directives/hello.js" mode="javascript"></div>
-		</div>
-
-		<div class="col-md-5">
-			<iframe src="/SpecRunner.html"></iframe>
-		</div>
-	</div>
-</div>
+	<column>
+		Unit Tests:
+		<iframe src="/SpecRunner.html"></iframe>
+	</column>
+</column-view>

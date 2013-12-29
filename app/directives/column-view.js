@@ -21,7 +21,7 @@ App.directive('columnView', function() {
           column.width = 2;
         });
 
-        focusedColumn.width = 13 - (numberOfColumns * 2);
+        focusedColumn.width = 12 - ((numberOfColumns - 1) * 2);
       };
     },
     templateUrl: '/app/directives/column-view.html'

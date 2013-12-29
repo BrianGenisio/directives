@@ -1,16 +1,11 @@
-<div class="slide-dependent-directives">
-	<h1>Dependent Directives</h1>
+<column-view heading="Dependent Directives" class="slide-dependent-directives">
+	<column>
+		<div show-code="/app/snippets/use-tabs.html" mode="html"></div>
+	</column>
 
-	<div class="row">
-		<div class="col-md-6">
-			Usage:
-			<div show-code="/app/snippets/use-tabs.html" mode="html"></div>
+	<column>
+		<div class="demo well">
+			<div ng-include="'/app/snippets/use-tabs.html'"></div>
 		</div>
-
-		<div class="col-md-6">
-			<div class="demo well">
-				<div ng-include="'/app/snippets/use-tabs.html'"></div>
-			</div>
-		</div>
-	</div>
-</div>
+	</column>
+</column-view>

@@ -172,10 +172,11 @@ body {
 
 .show-code .controls {
 	position: absolute;
-	bottom: 16px;
+	bottom: 40px;
 	left: 3px;
 	z-index: 5000;
 	width: 100%;
+	height: 0px;
 }
 
 .show-code .controls button {

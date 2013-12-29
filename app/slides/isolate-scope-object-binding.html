@@ -1,20 +1,12 @@
-<div class="slide-isolate-scope-object-binding">
-	<h1>Isolate Scope Object Binding</h1>
+<column-view heading="Isolate Scope Object Binding" class="slide-isolate-scope-object-binding">
+	<column>
+		<div show-code="/app/directives/click-count.js" mode="javascript"></div>
+	</column>
 
-	<div class="row">
-		<div class="col-md-6">
-			JavaScript:
-			<div show-code="/app/directives/click-count.js" mode="javascript"></div>
+	<column>
+		<div class="usage" show-code="/app/snippets/use-click-count.html" mode="html"></div>
+		<div class="demo well">
+			<div ng-include="'/app/snippets/use-click-count.html'"></div>
 		</div>
-
-		<div class="col-md-6">
-			HTML:
-			<div class="usage" show-code="/app/snippets/use-click-count.html" mode="html"></div>
-
-			Demo:
-			<div class="demo well">
-				<div ng-include="'/app/snippets/use-click-count.html'"></div>
-			</div>
-		</div>
-	</div>
-</div>
+	</column>
+</column-view>

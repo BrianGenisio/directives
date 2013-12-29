@@ -1,20 +1,12 @@
-<div class="slide-isolate-scope-string-binding-mechanics">
-	<h1>String Binding Mechanics</h1>
+<column-view heading="String Binding Mechanics" class="slide-isolate-scope-string-binding-mechanics">
+	<column>
+		<div show-code="/app/directives/bind-string.js" mode="javascript"></div>
+	</column>
 
-	<div class="row">
-		<div class="col-md-6">
-			JavaScript:
-			<div show-code="/app/directives/bind-string.js" mode="javascript"></div>
+	<column>
+		<div class="usage" show-code="/app/snippets/use-bind-scope.html" mode="html"></div>
+		<div class="demo well">
+			<div ng-include="'/app/snippets/use-bind-scope.html'"></div>
 		</div>
-
-		<div class="col-md-6">
-			HTML:
-			<div class="usage" show-code="/app/snippets/use-bind-scope.html" mode="html"></div>
-
-			Demo:
-			<div class="demo well">
-				<div ng-include="'/app/snippets/use-bind-scope.html'"></div>
-			</div>
-		</div>
-	</div>
-</div>
+	</column>
+</column-view>

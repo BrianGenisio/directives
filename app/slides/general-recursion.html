@@ -1,31 +1,17 @@
-<div class="slide-recursive-directives">
-	<h1>General Solution for Recursion!</h1>
+<column-view heading="General Solution for Recursion!" class="slide-recursive-directives">
+	<column>
+		<div show-code="/app/directives/tree.js" mode="javascript"></div>
+		<div show-code="/app/directives/tree.html" mode="html"></div>
+	</column>
 
-	<div class="row">
-		<div class="col-md-6">
-			JavaScript:
-			<div show-code="/app/directives/tree.js" mode="javascript"></div>
-
-			Template:
-			<div show-code="/app/directives/tree.html" mode="html"></div>
+	<column>
+		<div class="usage" show-code="/app/snippets/use-general-tree.html" mode="html"></div>
+		<div class="demo well">
+			<div ng-include="'/app/snippets/use-general-tree.html'"></div>
 		</div>
+	</column>
 
-		<div class="col-md-6">
-			HTML:
-			<div class="usage" show-code="/app/snippets/use-general-tree.html" mode="html"></div>
-
-			Demo:
-			<div class="demo well">
-				<div ng-include="'/app/snippets/use-general-tree.html'"></div>
-			</div>
-
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-md-12">
-			Recursion Helper:
-			<div show-code="/app/services/recursion-helper.js" mode="javascript"></div>
-		</div>
-	</div>
-</div>
+	<column>
+		<div show-code="/app/services/recursion-helper.js" mode="javascript"></div>
+	</column>
+</column-view>

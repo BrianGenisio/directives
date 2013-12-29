@@ -1,20 +1,13 @@
-<div class="slide-salut-directive">
-	<h1>Directive usage</h1>
+<column-view heading="Directive usage" class="slide-salut-directive">
+	<column>
+		<div show-code="/app/directives/salut.js" mode="javascript"></div>
+	</column>
 
-	<div class="row">
-		<div class="col-md-6">
-			JavaScript:
-			<div show-code="/app/directives/salut.js" mode="javascript"></div>
+	<column>
+		<div class="usage" show-code="/app/snippets/use-salut-directive.html" mode="html"></div>
+
+		<div class="demo well">
+			<div ng-include="'/app/snippets/use-salut-directive.html'"></div>
 		</div>
-
-		<div class="col-md-6">
-			HTML:
-			<div class="usage" show-code="/app/snippets/use-salut-directive.html" mode="html"></div>
-
-			Demo:
-			<div class="demo well">
-				<div ng-include="'/app/snippets/use-salut-directive.html'"></div>
-			</div>
-		</div>
-	</div>
-</div>
+	</column>
+</column-view>

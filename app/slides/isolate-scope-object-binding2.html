@@ -1,23 +1,13 @@
-<div class="slide-isolate-scope-object-binding2">
-	<h1>More real-world example</h1>
+<column-view heading="More real-world example" class="slide-isolate-scope-object-binding2">
+	<column>
+		<div show-code="/app/directives/edit-in-place.js" mode="javascript"></div>
+		<div show-code="/app/directives/edit-in-place.html" mode="html"></div>	
+	</column>
 
-	<div class="row">
-		<div class="col-md-8">
-			JavaScript:
-			<div show-code="/app/directives/edit-in-place.js" mode="javascript"></div>
-
-			Template:
-			<div show-code="/app/directives/edit-in-place.html" mode="html"></div>			
+	<column>
+		<div class="usage" show-code="/app/snippets/use-edit-in-place.html" mode="html"></div>
+		<div class="demo well">
+			<div ng-include="'/app/snippets/use-edit-in-place.html'"></div>
 		</div>
-
-		<div class="col-md-4">
-			HTML:
-			<div class="usage" show-code="/app/snippets/use-edit-in-place.html" mode="html"></div>
-
-			Demo:
-			<div class="demo well">
-				<div ng-include="'/app/snippets/use-edit-in-place.html'"></div>
-			</div>
-		</div>
-	</div>
-</div>
+	</column>
+</column-view>

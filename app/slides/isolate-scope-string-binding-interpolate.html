@@ -1,23 +1,13 @@
-<div class="slide-isolate-scope-string-binding-interpolate">
-	<h1>One Way, but You Get Interpolation!</h1>
+<column-view heading="One Way, but You Get Interpolation!" class="slide-isolate-scope-string-binding-interpolate">
+	<column>
+		<div show-code="/app/directives/interesting.js" mode="javascript"></div>
+		<div show-code="/app/directives/interesting.html" mode="html"></div>
+	</column>
 
-	<div class="row">
-		<div class="col-md-6">
-			JavaScript:
-			<div show-code="/app/directives/interesting.js" mode="javascript"></div>
-
-			interesting.html:
-			<div show-code="/app/directives/interesting.html" mode="html"></div>
+	<column>
+		<div class="usage" show-code="/app/snippets/use-interesting-man-interpolate.html" mode="html"></div>
+		<div class="demo well">
+			<div ng-include="'/app/snippets/use-interesting-man-interpolate.html'"></div>
 		</div>
-
-		<div class="col-md-6">
-			HTML:
-			<div class="usage" show-code="/app/snippets/use-interesting-man-interpolate.html" mode="html"></div>
-
-			Demo:
-			<div class="demo well">
-				<div ng-include="'/app/snippets/use-interesting-man-interpolate.html'"></div>
-			</div>
-		</div>
-	</div>
-</div>
+	</column>
+</column-view>
