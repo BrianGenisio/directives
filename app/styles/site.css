@@ -27,7 +27,7 @@ body
 	height: 100%;
 	background-color: #eee;
 	padding: 1em;
-	border-radius: 6px;
+	border-radius: 20px;
 	overflow: auto;
 	overflow-x: hidden;
 }
