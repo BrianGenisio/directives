@@ -2,7 +2,7 @@ App.directive('bindBool', function($parse) {
   return {
     restrict: 'AE',
     scope: {
-//      value: '@'
+//      value: '='
     },  
     template: 
   '<span ng-click="toggle()">' +

@@ -12,7 +12,7 @@ App.directive('fixedTree', function($timeout, $compile) {
     		angular.forEach(containers, function(container) {
     			var containerElement = angular.element(container);
 
-    			containerElement.append('<fixed-tree nodes="value"></tree>');
+    			containerElement.append('<fixed-tree nodes="value"></fixed-tree>');
 
     			$compile(containerElement)(containerElement.scope());
     		});
