@@ -5,10 +5,6 @@ App.directive('bindBool', function($parse) {
     scope: {
 //      value: '='
     }, 
-    
-    template: '<span ng-click="toggle()">' +
-              '  Value: {{value}}' +
-              '</span>',
       
     link: function(scope, element, attrs) {
       
@@ -20,9 +16,11 @@ App.directive('bindBool', function($parse) {
         $parse(attrs.value).assign(scope.$parent, scope.value);
       });
       
-      scope.toggle = function() {
-        scope.value = !scope.value;
-      };
-    }
+    },
+    
+    template: '<span ng-click="value = !value">' +
+              '  Value: {{value}}' +
+              '</span>'
+    
   };
 });

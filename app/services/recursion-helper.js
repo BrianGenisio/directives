@@ -2,9 +2,9 @@
 // http://stackoverflow.com/questions/14430655/recursion-in-angular-directives
 App.factory('recursionHelper', function($compile){
   return {
-    compile: function(element){
+    compile: function(templateElement){
       
-      var contents = element.contents().remove();
+      var contents = templateElement.contents().remove();
       var compiledContents;
       
       return function(scope, element){

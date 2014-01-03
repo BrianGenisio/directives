@@ -1,7 +1,12 @@
-App.directive('compileDemo', function() {
+App.directive('lifecycleDemo', function() {
   return {
   	restrict: 'AE',
   	
+    controller: function($scope, $http) {
+      // runtime scope behavior
+      // runtime inter-directive behavior
+    },
+    
     compile: function(templateElement, attrs) {
       // Transform the template Element
       // Once per invocation
@@ -12,6 +17,8 @@ App.directive('compileDemo', function() {
       	// runtime behavior
       	// n-times per invocation
       };
-    }
+    },
+    
+    template: '<div class="awesome">Something Awesome</div>'
   };
 });

@@ -1,4 +1,4 @@
-App.directive('harlemShake', function(hsConfig) {
+App.directive('shakeIt', function(hsConfig) {
   return {
     restrict: 'AE',
     transclude: true,
@@ -11,7 +11,6 @@ App.directive('harlemShake', function(hsConfig) {
       });
     },
     
-    templateUrl: 
-      '/app/directives/harlem-shake.html'
+    templateUrl: '/app/directives/harlem-shake.html'
   };
 });
