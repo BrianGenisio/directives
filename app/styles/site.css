@@ -217,8 +217,7 @@ body {
 	width: 100%;
 }
 
-.slide .slide-what-is-a-directive {
-	background-image: url(/img/legos.jpg);
+.slide .section {
 	background-size: cover;
 	height: 100%;
 	padding: 0px;
@@ -227,8 +226,8 @@ body {
 	text-align: center;
 }
 
-.slide .slide-what-is-a-directive h1 {
-	padding: 5em;
+.slide .section h1, .slide .section h2 {
+	padding: 4em;
 	font-size: 62px;
 	text-shadow:
     -1px -1px 0 #000,
@@ -237,4 +236,55 @@ body {
     -1px 1px 0 #000,
     1px 1px 0 #000,
     0px 1px 0 #000;
+}
+
+.slide .section h2 {
+	font-size: 48px;
+}
+
+.slide .slide-what-is-a-directive {
+	background-image: url(/img/legos.jpg);
+}
+
+.slide .slide-start-simple {
+	background-image: url(/img/start-simple.jpg);
+}
+
+.slide .slide-behavior {
+	background-image: url(/img/behavior.jpg);
+	background-size: contain;
+}
+
+.slide .slide-binding {
+	background-image: url(/img/binding.jpg);
+}
+
+.slide .slide-binding li {
+	list-style-type: none;
+}
+
+.slide .slide-binding h1, .slide .slide-binding h2 {
+	padding: 0px;
+	text-align: right;
+}
+
+.slide .slide-binding h2 {
+	color: #DDD;
+}
+
+.slide .slide-lifecycle {
+	background-image: url(/img/lifecycle.jpg);
+}
+
+.slide .slide-recursion {
+	background-image: url(/img/recursion.png);
+}
+
+
+.slide .slide-dependencies {
+	background-image: url(/img/dependencies.jpg);
+}
+
+.slide .slide-thank-you li {
+	font-size: 42px;
 }
