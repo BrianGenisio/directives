@@ -19,6 +19,6 @@ describe("hello directive", function() {
   }));
   
   it("says hello", function() {
-    expect(element.text()).toBe("hello directive!");
+    expect(element.text()).toBe("hello!");
   });
 });

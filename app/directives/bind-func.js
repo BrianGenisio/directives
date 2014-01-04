@@ -7,7 +7,7 @@ App.directive('bindFunc', function($parse) {
     },  
 
     link: function(scope, element, attrs) {
-      scope.hello = "Greetings!";
+      scope.hello = "Magic Missle!";
 
       scope.action = function(parameters) {
         return scope.$parent.$eval(attrs.action, parameters);
@@ -16,7 +16,7 @@ App.directive('bindFunc', function($parse) {
     },
 
     template: '<button ng-click="action({message: hello})">' +
-              '  Call Back!' +
+              '  Cast!' +
               '</button>'
   };
 });

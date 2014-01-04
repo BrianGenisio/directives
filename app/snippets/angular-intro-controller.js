@@ -1,12 +1,12 @@
-App.controller('StarwarsCtrl', function($scope) {
+App.controller('CatsCtrl', function($scope) {
 
-  $scope.characters = [
-    {name: "Luke Skywalker", homeworld: "Tatooine"},
-    {name: "Obi Wan Kanobi", homeworld: "Stewjon" },
-    {name: "Han Solo", homeworld: "Corillia"},
-    {name: "Chewbacca", homeworld: "Kashyyyk"},
-    {name: "Leia Organa", homeworld: "Alderaan"},
-    {name: "Darth Vader", homeworld: "Tatooine"}
+  $scope.cats = [
+    {name: "LOL Cat"},
+    {name: "Ceiling Cat"},
+    {name: "Grumpy Cat"},
+    {name: "NONONONO Cat"},
+    {name: "Spaghetti Cat"},
+    {name: "Bullet Cat"}
   ];
 
 });

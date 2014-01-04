@@ -1,8 +1,8 @@
-<div ng-controller="StarwarsCtrl">
-  <h2>Star Wars Charcters</h2>
+<div ng-controller="CatsCtrl">
+  <h2>Famous Cats</h2>
   <ul>
-    <li ng-repeat="character in characters | filter:name">
-      {{character.name}} from {{character.homeworld}}
+    <li ng-repeat="cat in cats | filter:name">
+      {{cat.name}}
     </li>
   </ul>
         

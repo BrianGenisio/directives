@@ -9,15 +9,15 @@ App.directive('callback', function(rickAstley) {
     controller: function($scope) {
       var messages = rickAstley.get();
 
-      $scope.freeiPad = function() {
+      $scope.checkThisOut = function() {
         $scope.callback({
           message: messages.next()
         });
       };
 
     },
-    template: '<button ng-click="freeiPad()">' +
-              '  Free iPad!' +
+    template: '<button ng-click="checkThisOut()">' +
+              '  Check it out!' +
               '</button>'
   };
 });

@@ -19,7 +19,7 @@ App.directive('bindBool', function($parse) {
     },
     
     template: '<span ng-click="value = !value">' +
-              '  Value: {{value}}' +
+              '  Honey Badger Care? {{value}}' +
               '</span>'
     
   };

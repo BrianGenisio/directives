@@ -1,14 +1,17 @@
 App.controller('treeDemoCtrl', function($scope) {
   
-  $scope.family = {
-    "Me": {
-      "Mom": {
-        "Maternal Grandmother": {},
-        "Maternal Grandfather": {}
+  $scope.popularMemes = {
+    "Memes": {
+      "Songs": {
+        "Gangnam Style": {},
+        "Numa Numa": {},
+        "What Does the Fox Say?": {},
+        "Friday": {}
       },
-      "Dad": {
-        "Paternal Grandmother": {},
-        "Paternal Grandfather": {}
+      "Generators": {
+        "One Does Not Simply...": {},
+        "I don't always...": {},
+        "Domo Kun": {}
       }
     }
   };
