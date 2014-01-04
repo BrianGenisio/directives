@@ -260,7 +260,7 @@ body {
 }
 
 .slide .slide-binding li {
-	list-style-type: none;
+	list-style: none;
 }
 
 .slide .slide-binding h1, .slide .slide-binding h2 {
@@ -287,4 +287,13 @@ body {
 
 .slide .slide-thank-you li {
 	font-size: 42px;
+}
+
+.slide .slide-types-of-directives li {
+	list-style: none;
+}
+
+.slide .slide-types-of-directives li h2 {
+	padding: 0px;
+	margin: 0px;
 }
