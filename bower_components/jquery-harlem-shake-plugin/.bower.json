@@ -1,0 +1,13 @@
+{
+  "name": "jquery-harlem-shake-plugin",
+  "homepage": "https://github.com/piscis/jquery-harlem-shake-plugin",
+  "_release": "f73318c3e1",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f73318c3e199faeed67777c03f6bed6407a061fc"
+  },
+  "_source": "git://github.com/piscis/jquery-harlem-shake-plugin.git",
+  "_target": "*",
+  "_originalSource": "jquery-harlem-shake-plugin"
+}

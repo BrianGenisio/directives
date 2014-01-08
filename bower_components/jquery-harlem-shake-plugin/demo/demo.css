@@ -1,0 +1,28 @@
+body, html{
+  height: 98%;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+
+.one { top: 10px; left: 10px; z-index: 1; }
+.two { top: 10px; right: 10px; z-index: 1; }
+.three { bottom: 10px; left: 10px; z-index: 1; }
+.four { bottom: 10px; right: 10px; z-index: 1; }
+.five { top: 50%; left: 50%; z-index: 1; }

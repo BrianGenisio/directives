@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>jQuery Harlem Shake  Demo</title>
+    <link rel="stylesheet" href="demo.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../jquery-harlem-shake-1.0.js"></script>
+    <script type="text/javascript">
+      jQuery(function($){
+        $(document).hshakeify({
+          onEnd: function(){
+            console.log('the end my friend');
+          },
+          css_file: '../jquery-harlem-shake-1.0.css',
+          audio_file: '../harlemshake'
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <img src="http://placehold.it/150x150" alt="" class="one" />
+
+      <img src="http://placehold.it/150x150" alt="" class="two" />
+
+      <img src="http://placehold.it/150x150" alt="" class="three" />
+
+      <img src="http://placehold.it/150x150" alt="" class="four" />
+
+      <img src="http://placehold.it/150x150" alt="" class="five" />
+    </div>
+
+  </body>
+</html>
