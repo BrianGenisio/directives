@@ -1,3 +1,5 @@
+var enableSave = !process.env.PORT; // don't allow save API when deployed
+
 var express = require('express');
 var fs = require('fs');
 
@@ -13,20 +15,26 @@ app.get("/*", function(request, response) {
 	response.sendfile(__dirname + file);
 });
 
-app.post("/save", function(request, response) {
-	var data = request.body;
-	var fileName = __dirname + data.file;
+function configureSave() {
+	app.post("/save", function(request, response) {
+		var data = request.body;
+		var fileName = __dirname + data.file;
 
-	fs.writeFile(fileName, data.content, function(err) {
-		if(err) {
-			console.log(err);
-		} else {
-			console.log("Saved File: ", fileName);
-		}
+		fs.writeFile(fileName, data.content, function(err) {
+			if(err) {
+				console.log(err);
+			} else {
+				console.log("Saved File: ", fileName);
+			}
+		});
+
+		response.send("");
 	});
+}
 
-	response.send("");
-});
+if(enableSave) {
+	configureSave();
+}
 
 app.listen(process.env.PORT || 3000);
 
