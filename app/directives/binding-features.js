@@ -1,4 +1,4 @@
-App.directive('binding-features', function() {
+App.directive('bindingFeatures', function() {
   return {
   	restrict: 'AE',
   	scope: {
