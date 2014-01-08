@@ -1137,7 +1137,9 @@ angular.module('templates').run(['$templateCache', function($templateCache) {
     "\t<h2>A deep dive into Angular's most powerful feature</h2>\n" +
     "\t<p>\n" +
     "\t\tPresented by @BrianGenisio of CareEvolution<br />\t\n" +
-    "\t\t<a href=\"http://letsfixhealthcare.com\">LetsFixHealthcare.com</a>\n" +
+    "\t\t<a href=\"http://letsfixhealthcare.com\">LetsFixHealthcare.com</a> <br /><br />\n" +
+    "\t\n" +
+    "\t\tFollow Along: <a href=\"http://directivesdemystified.herokuapp.com/\">DirectivesDemystified.herokuapp.com</a>\n" +
     "\t</p>\n" +
     "</div>\n" +
     "\n"
@@ -1541,15 +1543,16 @@ angular.module('templates').run(['$templateCache', function($templateCache) {
     "\t<h1>The End.  Questions?</h1>\n" +
     "\n" +
     "\t<div class=\"row\">\n" +
-    "\t\t<div class=\"col-md-5\">\n" +
-    "\t\t\t<img src=\"/img/backflip.gif\" />\n" +
+    "\t\t<div class=\"col-md-4\">\n" +
+    "\t\t\t<img src=\"/img/backflip.gif\" width=\"100%\" />\n" +
     "\t\t</div>\n" +
     "\n" +
-    "\t\t<div class=\"col-md-7\">\n" +
+    "\t\t<div class=\"col-md-8\">\n" +
     "\t\t\t<ul>\n" +
-    "\t\t\t\t<li> <a href=\"http://twitter.com/BrianGenisio\">@BrianGenisio</a> </li>\n" +
-    "\t\t\t\t<li> <a href=\"http://LetsFixHealthcare.com\">CareEvolution</a> </li>\n" +
-    "\t\t\t\t<li> <a href=\"https://github.com/BrianGenisio/directives\">Examples</a> </li>\n" +
+    "\t\t\t\t<li> Me: <a href=\"http://twitter.com/BrianGenisio\">@BrianGenisio</a> </li>\n" +
+    "\t\t\t\t<li> CareEvolution: <a href=\"http://LetsFixHealthcare.com\">LetsFixHealthcare.com</a> </li>\n" +
+    "\t\t\t\t<li> Slides: <a href=\"http://directivesdemystified.herokuapp.com\">DirectivesDemystified.herokuapp.com</a>\n" +
+    "\t\t\t\t<li> Code: <a href=\"https://github.com/BrianGenisio/directives\">github.com/BrianGenisio/directives</a> </li>\n" +
     "\t\t\t\t<li> <a href=\"https://www.youtube.com/watch?v=WqmeI5fZcho\">Misko Hevery Presentation</a> </li>\n" +
     "\t\t\t</ul>\n" +
     "\t\t</div>\n" +
