@@ -379,7 +379,7 @@ angular.module('templates').run(['$templateCache', function($templateCache) {
     "\t<h1>Angular Directives: Demystified</h1>\n" +
     "\t<h2>A deep dive into Angular's most powerful feature</h2>\n" +
     "\t<p>\n" +
-    "\t\tPresented by @BrianGenisio of CareEvolution<br />\t\n" +
+    "\t\tPresented by <a href=\"http://twitter.com/BrianGenisio\">@BrianGenisio</a> of CareEvolution<br />\t\n" +
     "\t\t<a href=\"http://letsfixhealthcare.com\">LetsFixHealthcare.com</a> <br /><br />\n" +
     "\t\n" +
     "\t\tFollow Along: <a href=\"http://directivesdemystified.herokuapp.com/\">DirectivesDemystified.herokuapp.com</a>\n" +
