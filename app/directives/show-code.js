@@ -28,7 +28,7 @@ App.directive('showCode', function($http, $timeout) {
           matchBrackets: true,
           autoCloseBrackets: true,
           mode: mode,
-          theme: '3024-night'
+          theme: 'eclipse'
         }
         
         if(!scope.url) return;
