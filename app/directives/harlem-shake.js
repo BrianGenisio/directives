@@ -5,9 +5,7 @@ App.directive('shakeIt', function(hsConfig) {
     
     link: function(scope, element) {
       element.click(function() {
-        scope.$apply(function() {
-          $(element).hshakeify(hsConfig);
-        });
+        $(element).hshakeify(hsConfig);
       });
     },
     

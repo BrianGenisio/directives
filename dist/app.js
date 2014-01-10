@@ -96,8 +96,6 @@ App.directive('bindString', function() {
     scope: {
 //      friend: '@'
     },  
-    
-    template: '<div>hello {{friend}}!</div>',
       
     link: function(scope, element, attrs) {
       
@@ -105,7 +103,9 @@ App.directive('bindString', function() {
         scope.friend = val;
       });
       
-    }
+    },
+    
+    template: '<div>hello {{friend}}!</div>',
   };
 });;
 
@@ -357,9 +357,7 @@ App.directive('shakeIt', function(hsConfig) {
     
     link: function(scope, element) {
       element.click(function() {
-        scope.$apply(function() {
-          $(element).hshakeify(hsConfig);
-        });
+        $(element).hshakeify(hsConfig);
       });
     },
     

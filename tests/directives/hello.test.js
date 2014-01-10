@@ -5,9 +5,10 @@ describe("hello directive", function() {
     var html = "<div hello></div>";
     element = angular.element(html);
     
+    var compositeLink = $compile(element);
+    
     scope = $rootScope.$new();
     
-    var compositeLink = $compile(element);
     compositeLink(scope);
     
     scope.$digest();

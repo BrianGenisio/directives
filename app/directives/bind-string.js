@@ -5,8 +5,6 @@ App.directive('bindString', function() {
     scope: {
 //      friend: '@'
     },  
-    
-    template: '<div>hello {{friend}}!</div>',
       
     link: function(scope, element, attrs) {
       
@@ -14,6 +12,8 @@ App.directive('bindString', function() {
         scope.friend = val;
       });
       
-    }
+    },
+    
+    template: '<div>hello {{friend}}!</div>',
   };
 });
